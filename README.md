@@ -47,7 +47,7 @@ openshift.set_uptime_route('/uptime_route');
 
 It is the same result as doing:
 ```javascript
-your_express_instance.get('/app', function(req,res)){
+your_express_instance.get('/uptime_route', function(req,res)){
     res.send('Uptime OK!');
 });
 ```
