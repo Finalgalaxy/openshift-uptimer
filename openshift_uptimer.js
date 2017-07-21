@@ -17,6 +17,10 @@ let openshift_uptimer = function(){
         this.set_uptime_route('/uptime_route');
     }
 
+    this.get_express = function(){
+        return this.express_app;
+    }
+
     this.set_express = function(app){
         this.express_app = app;
     }
