@@ -1,6 +1,6 @@
 {
   "name": "openshift-uptimer",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "NPM module to prevent your OpenShift Node.js cartridge from being in IDLE status, in Express.",
   "main": "index.js",
   "scripts": {
