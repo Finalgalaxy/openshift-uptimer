@@ -1,0 +1,30 @@
+{
+  "name": "openshift-uptimer",
+  "version": "1.0.5",
+  "description": "NPM module to prevent your OpenShift Node.js cartridge from being in IDLE status, in Express.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Finalgalaxy/openshift-uptimer.git"
+  },
+  "keywords": [
+    "node.js",
+    "nodejs",
+    "openshift",
+    "cartridge",
+    "idle",
+    "express"
+  ],
+  "author": "Finalgalaxy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Finalgalaxy/openshift-uptimer/issues"
+  },
+  "homepage": "https://github.com/Finalgalaxy/openshift-uptimer#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
