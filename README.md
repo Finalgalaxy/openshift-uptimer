@@ -25,12 +25,12 @@ This will also install Express dependency.
 VERY simple:
 ```javascript
 // JUST ONE LINE!
-require('openshift_uptimer').auto_configure();  // Done!
+require('openshift-uptimer').auto_configure();  // Done!
 ```
 
 If you like some customization or more control:
 ```javascript
-var openshift = require('openshift_uptimer');
+var openshift = require('openshift-uptimer');
 openshift.log(true); // Enable logging
 openshift.auto_configure(); // Done!
 ```
@@ -40,7 +40,7 @@ A new route will be created at `yourwebsite.com/uptime_route` with just very few
 ## I DID use Express in my application and I want to use the same Express instance. How can I do it?
 This way:
 ```javascript
-var openshift = require('openshift_uptimer');
+var openshift = require('openshift-uptimer');
 openshift.set_express(your_express_instance);
 openshift.set_uptime_route('/uptime_route');
 ```
