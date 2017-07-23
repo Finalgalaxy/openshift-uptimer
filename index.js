@@ -8,13 +8,16 @@ let openshift_uptimer = function(){
     }
 
     this.auto_configure = function(){
-        this.express_app = express();
-        var ipaddress = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
-        var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
-        this.express_app.listen(port, ipaddress, function(){
-            log_message('[openshift_uptimer Express] Ready! IP='+ipaddress+', port='+port);
+        return new Promise((resolve, reject) => {
+            this.express_app = express();
+            var ipaddress = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
+            var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+            this.express_app.listen(port, ipaddress, function(){
+                log_message('[openshift_uptimer Express] Ready! IP='+ipaddress+', port='+port);
+            });
+            this.set_uptime_route('/uptime_route');
+            resolve(true);
         });
-        this.set_uptime_route('/uptime_route');
     }
 
     this.get_express = function(){
